@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-18T13:15:38.880Z</updated>
+  <updated>2016-07-19T07:22:26.244Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>备份Hexo博客源文件</title>
+    <link href="http://yoursite.com/2016/%E5%A4%87%E4%BB%BDHexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/备份Hexo博客源文件/</id>
+    <published>2016-07-19T07:11:43.000Z</published>
+    <updated>2016-07-19T07:22:26.244Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;实现方法&quot;&gt;&lt;a href=&quot;#实现方法&quot; class=&quot;headerlink&quot; title=&quot;实现方法:&quot;&gt;&lt;/a&gt;实现方法:&lt;/h2&gt;&lt;p&gt;在Github下创建一个新的repository，取名为HEXO。(与本地的Hexo源码文件夹同名即可)&lt;br&gt;进入本地的Hexo文件夹，执行以下命令创建仓库:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;设置远程仓库地址，并更新:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git remote add origin git@github.com:smilexiamo/hexo.git
+$ git pull origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;修改.gitignore文件（如果没有请手动创建一个），在里面加入&lt;em&gt;.log 和 public/ 以及.deploy&lt;/em&gt;/。因为每次执行hexo generate命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。&lt;br&gt;执行命令以下命令，完成Hexo源码在本地的提交。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git add .
+$ git commit -m &lt;span class=&quot;string&quot;&gt;&quot;添加hexo源码文件作为备份&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;执行以下命令，将本地的仓库文件推送到Github。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;现在在任何一台电脑上，只需要git clone git@github.com:a/hexo.git,即可完成将Hexo源文件复制到本地。（请将后面的git@github.com:a/hexo.git替换为自己相应的仓库地址。否则，克隆的将是博主的博客源码:)）&lt;br&gt;在本地编写完博客时，顺次执行以下命令，即可完成Hexo博客源文件的更新同步，保持Github上的hexo源码为最新版本。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git add .
+$ git commit -m &lt;span class=&quot;string&quot;&gt;&quot;更新hexo源文件&quot;&lt;/span&gt;
+$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当远程仓库有更新时，执行以下命令，即可同步hexo源文件到本地。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ git pull origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;至此，Hexo源代码文件就完成了同步和更新了。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;实现方法&quot;&gt;&lt;a href=&quot;#实现方法&quot; class=&quot;headerlink&quot; title=&quot;实现方法:&quot;&gt;&lt;/a&gt;实现方法:&lt;/h2&gt;&lt;p&gt;在Github下创建一个新的repository，取名为HEXO。(与本地的Hexo源码文件夹同名即可)&lt;br&gt;进入本地
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>神雕侠侣手游</title>
