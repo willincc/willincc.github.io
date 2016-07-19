@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/sdlx/</loc>
+    <lastmod>2016-07-18T13:15:38.880Z</lastmod>
+    <data>
+        <display>
+        <title>神雕侠侣手游</title>
+        <pubTime>2016-07-18T09:12:26.000Z</pubTime>
+        
+        <tag>手游</tag>
+         
+         
+           
+             
+              <breadCrumb title="手游" url="http://yoursite.com/categories/%E6%89%8B%E6%B8%B8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2016/hello-world/</loc>
+    <lastmod>2016-07-18T06:36:40.408Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-07-18T06:36:40.396Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
